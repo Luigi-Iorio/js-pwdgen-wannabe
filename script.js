@@ -15,6 +15,8 @@ const colore = prompt("scrivi il tuo colore preferito");
 console.log(colore);
 
 // inserimento dati in html
-pwd.innerHTML = `${nome}${cognome}${colore}21`;
+pwd.innerHTML = `${nome}${cognome}${colore}${
+  Math.floor(Math.random() * 100) + 1
+}`;
 // visualizzazione in console
 console.log(pwd.innerHTML);
